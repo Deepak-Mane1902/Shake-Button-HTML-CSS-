@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button-Shake</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgba(13, 8, 9, 0.978);
+            display: grid;
+            place-items: center;
+            padding: 14rem;
+            
+
+        }
+        button{
+            font-size: 2.8rem;
+            color: whitesmoke;
+            font-weight: 800;
+            width:300px;
+            height: 80px;
+            background-color: transparent;
+            border: 1px solid red;
+            box-shadow: 0 0 15px red, 0 0 15px red inset;
+            border-radius: 9px;
+      
+
+            &:hover{
+                color: rgb(138, 19, 19);
+                border: 5px solid red;
+                text-shadow:0 0 5px rgb(112, 9, 9);
+                /* background-color:transparent; */
+                box-shadow: 0 0 15px rgb(213, 45, 45) ;
+                animation: shake 0.2s linear;
+                transition:all e;
+            }
+        }
+        @keyframes shake{
+            0%{rotate: 10deg;}
+            50%{rotate: -10deg;}
+            100%{rotate: 10deg;}
+        }
+    </style>
+</head>
+<body>
+<button>Button</button>
+</body>
+</html>
